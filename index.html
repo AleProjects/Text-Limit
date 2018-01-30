@@ -19,6 +19,12 @@
 		
 		<script src="jquery.min.js"></script>
 		<script src="textLimit.js"></script>
+		<script>
+			$('input, textarea')
+				.each(function(idx, el) {
+					$(el).textLimit();
+				});
+		</script>
 		<style>
 			body {
 				padding: 2%;
